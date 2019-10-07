@@ -1,0 +1,88 @@
+/* border-box decleration */
+html {
+  box-sizing: border-box;
+}
+/* inherit border-box on all elements in the uinverse and before and after */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #025273;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+header,
+section,
+article,
+aside,
+footer {
+  padding: 1em;
+  border-radius: 1em;
+}
+header,
+footer {
+  background-color: #5aa9d9;
+}
+section,
+aside {
+  background-color: #3b82bf;
+}
+article {
+  background-color: #f2c335;
+  color: #333;
+}
+article button {
+  background-color: #e6480f;
+  font-size: 1.3em;
+  padding: 0.5em;
+  border-radius: 1em;
+  border: none;
+  font-weight: bold;
+}
+article button:hover {
+  background-color: #f26938;
+  color: #fff;
+}
+/* image hack to make images "responsive". Yes, not the best or the right way to do things, but it's quick! */
+.row img{
+  width: 100%;
+  max-width: 100%;
+  border-radius: 1em;
+}
+aside ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+aside a {
+  text-decoration: none;
+  color: #f5d166;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 1em;
+}
+aside a:hover {
+  color: #f2c335;
+}
+aside blockquote {
+  margin: 0;
+  padding: 0;
+}
+blockquote p {
+  font-size: 2em;
+  font-family: Georgia, serif;
+  font-style: italic;
+}
+blockquote cite::before {
+  content: "\2014\00a0"
+}
+
+footer {
+  text-align: center;
+}
+
+
